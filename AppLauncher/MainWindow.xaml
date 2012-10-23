@@ -1,0 +1,26 @@
+﻿<Window x:Class="AppLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Park Simulator Launcher" Height="249" Width="274" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Header="Simulate For" Height="62" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox1" VerticalAlignment="Top" Width="227">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="138*" />
+                    <ColumnDefinition Width="77*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Function A" Height="16" HorizontalAlignment="Left" Margin="34,10,0,0" Name="radioForA" VerticalAlignment="Top" IsChecked="True" GroupName="Transport" />
+                <RadioButton Content="Function B" Height="16" HorizontalAlignment="Left" Margin="128,10,0,0" Name="radioForB" VerticalAlignment="Top" Grid.ColumnSpan="2" GroupName="Transport" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Config Option" Height="68" HorizontalAlignment="Left" Margin="12,92,0,0" Name="groupBox2" VerticalAlignment="Top" Width="227">
+            <Grid>
+                <RadioButton Content="X" Height="16" HorizontalAlignment="Left" Margin="14,15,0,0" Name="radioX" VerticalAlignment="Top" GroupName="ConfigOption" />
+                <RadioButton Content="Y" Height="16" HorizontalAlignment="Left" Margin="85,15,0,0" Name="radioY" VerticalAlignment="Top" GroupName="ConfigOption" />
+                <RadioButton Content="Z" Height="16" HorizontalAlignment="Left" Margin="152,15,0,0" Name="radioZ" VerticalAlignment="Top" IsChecked="True" GroupName="ConfigOption" />
+            </Grid>
+        </GroupBox>
+        <Button Content="Launch" Height="23" HorizontalAlignment="Left" Margin="83,175,0,0" Name="buttonLaunch" VerticalAlignment="Top" Width="75" Click="buttonLaunch_Click" />
+    </Grid>
+</Window>
