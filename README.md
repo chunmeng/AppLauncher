@@ -1,4 +1,4 @@
 AppLauncher
 ===========
 
-A quick program using WPF to launch an Window application
+A quick program to launch an Window application. An exercise to learn C# and WPF. 
